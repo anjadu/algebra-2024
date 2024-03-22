@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Multimedijski sadržaji u HTML-u</title>
+</head>
+
+<body>
+  
+    <h2>Audio Sadržaj</h2>
+
+    <!-- Za autoplay, promijeniti postavke u browseru, npr. za Edge: edge://settings/content/mediaAutoplay
+
+        <audio src="../../Media/audio/in3s.mp3" controls autoplay loop></audio> -->
+
+    <audio controls>
+        <source src="../../Media/audio/in3s.ogg" type="audio/ogg">
+        <source src="../../Media/audio/in3s.mp3" type="audio/mp3">
+        <p>Vaš preglednik ne podržava audio sadržaj.</p>
+    </audio>
+    
+
+    <h2>Video Sadržaj</h2>
+    <video src="../../Media/video/mountains.mp4" controls width="300"></video>
+     <!-- muted autoplay i loop koristili bismo da želimo video na backgroundu koji je nečujan i ponavlja se -->
+
+     <video width="400" autoplay loop muted poster="https://posterspy.com/wp-content/uploads/2021/09/Dune02_Poster.jpg">
+        <source src="../../Media/video/mountains.mov" type="video/mov">
+        <source src="../../Media/video/mountains.mp4" type="video/mp4">
+        <p>Vaš preglednik ne podržava video sadržaj.</p>
+     </video>
+
+
+</body>
+
+</html>
