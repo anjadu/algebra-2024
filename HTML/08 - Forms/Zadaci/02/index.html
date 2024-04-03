@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>My feedback form</h1>
+    <form name="kontakt" action="" method="post" enctype="multipart/form-data">
+        <p>
+        <ul>
+            <li><label for="name">Name:<input id="name" type="text" size="20" maxlength="30" name="name"
+                        required /></label></li>
+
+            <li><label for="mail">Email:</label>
+                <input id="mail" type="email" size="20" name="email" required />
+                </label>
+            </li>
+            <li>
+                <label for="password">Password:</label>
+                <input id="password" name="password" type="password" maxlength="8" />
+                </label>
+            </li>
+        </ul>
+        <p>
+
+        <p>
+        <ul>
+            <li>Please check all the emotions that apply to you:</li>
+            <ul>
+                <li><label for="emotions">Angry</label><input id="emotions" type="checkbox" name="emotions" value="true"
+                        checked /></li>
+            </ul>
+            <ul>
+                <li><label for="emotions">Sad</label><input id="emotions" type="checkbox" name="emotions" value="true"
+                        checked /></li>
+            </ul>
+            <ul>
+                <li><label for="emotions">Happy</label><input id="emotions" type="checkbox" name="emotions" value="true"
+                        checked /></li>
+            </ul>
+            <ul>
+                <li><label for="emotions">Ambivalent</label><input id="emotions" type="checkbox" name="emotions"
+                        value="true" checked /></li>
+            </ul>
+        </ul>
+
+        <ul>
+            <li>How satisfied were you with our service?</li>
+            <ul>
+                <li><label for="emotions">Very satisfied</label><input id="emotions" type="radio" name="emotions"
+                        value="true" checked /></li>
+            </ul>
+            <ul>
+                <li><label for="emotions">Satisfied</label><input id="emotions" type="radio" name="emotions"
+                        value="true" checked /></li>
+            </ul>
+            <ul>
+                <li><label for="emotions">Didn`t care</label><input id="emotions" type="radio" name="emotions"
+                        value="true" checked /></li>
+            </ul>
+            <ul>
+                <li><label for="emotions">Dissatisfied</label><input id="emotions" type="radio" name="emotions"
+                        value="true" checked /></li>
+            </ul>
+
+            <ul>
+                <li><label for="emotions">Very dissatisfied</label><input id="emotions" type="radio" name="emotions"
+                        value="true" checked /></li>
+            </ul>
+        </ul>
+        </p>
+
+
+        <p>
+        <ul>
+            <li><label for="comment">Further comments:</label>
+                <textarea id="comment" maxlenght="60" cols="45" rows="4">
+            </textarea>
+            </li>
+        </ul>
+        </p>
+
+
+        <p>
+        <ul>
+            <li><label for="bio-photo">Bio photo:</label><input id="file" name="file" type="file" multiple /></li>
+        </ul>
+
+
+
+    </form>
+
+    <p>
+
+    <ul>
+        <li><label for="city">Odaberite grad<select id="city" name="city">
+                    <option value="london">Select location</option>
+                    <option value="rim">Rim, IT</option>
+                    <option value="paris">Pariz, FR</option>
+                    <select></label></li>
+    </ul>
+
+    </p>
+
+</body>
+
+</html>

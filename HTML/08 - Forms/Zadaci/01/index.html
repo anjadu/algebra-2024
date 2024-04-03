@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrasci</title>
+</head>
+
+<body>
+
+    <body>
+        <form name="kontakt" action="" method="post" enctype="multipart/form-data">
+            <p>
+                <label for="name">Ime i prezime*</label> <br />
+                <input id="name" type="text" placeholder="Vaše ime i prezime" size="20" maxlength="30" name="name"
+                    required />
+            </p>
+
+            <p>
+                <label for="mail">E-mail adresa*</label> <br />
+                <input id="mail" type="email" size="40" placeholder="Upišite valjanu e-mail adresu" name="email"
+                    required />
+            </p>
+
+            <p>
+                <label for="telephone">Kontakt broj telefona*</label><br />
+                <input id="telephone" type="tel" />
+            </p>
+
+            <p>
+                <label for="date-of-birth">Datum rođenja*</label><br />
+                <input id="date-of-birth" name="date-of-birth" type="date" max="2024-04-03" min="1950-04-03" required />
+            </p>
+
+
+            <p>
+
+                <label for="jezici">Koje jezike govorite?</label><br />
+
+                Engleski <input id="engleski" type="checkbox" name="engleski" value="true" />
+
+                Talijanski <input id="talijanski" type="checkbox" name="talijanski" value="true" />
+
+                Njemački <input id="njemacki" type="checkbox" name="njemacki" value="true" />
+
+                Francuski<input id="francuski" type="checkbox" name="francuski" value="true" />
+
+                Španjolski<input id="spanjolski" type="checkbox" name="spanjolski" value="true" />
+            </p>
+
+
+            <p>
+                Da li ste do sada koristili usluge naše tvrtke?<br />
+                <label for="yes">1</label>
+                <input type="radio" value="1" name="yesorno" />
+
+                <label for="no">2</label>
+                <input type="radio" value="2" name="yesorno" />
+
+            <p>
+                <label>Priložite životopis</label><br />
+                <input id="file" name="file" type="file" multiple />
+            </p>
+            <p>
+
+                <input type="reset" value="Poništi" />
+                <input type="submit" value="Prijavi se" />
+
+            </p>
+
+        </form>
+    </body>
+
+</html>
