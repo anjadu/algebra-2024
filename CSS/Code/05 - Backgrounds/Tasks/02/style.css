@@ -1,0 +1,7 @@
+body {
+  font-size: 16px;
+  color: transparent;
+  background: url(../../../images/sun.png) top left / 200px no-repeat scroll,
+    url(../../../images/grass.png) center bottom/ contain no-repeat fixed,
+    url(../../../images/pisa.jpeg) center 100% / cover no-repeat fixed;
+}
