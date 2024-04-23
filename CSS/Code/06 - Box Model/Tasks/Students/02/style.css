@@ -1,0 +1,21 @@
+body>div {
+    background-color: white;
+    border: 10px solid rgb(0, 0, 0);
+    width: 800px;
+    height: 800px;
+    margin: 40px auto;
+}
+
+div>div {
+    width: 50%;
+    height: 50%;
+}
+
+div>div:first-of-type {
+    background-color: rgb(139, 18, 18);
+}
+
+div>div:last-of-type {
+    background-color: rgb(211, 121, 19);
+    margin-left: auto;
+}
