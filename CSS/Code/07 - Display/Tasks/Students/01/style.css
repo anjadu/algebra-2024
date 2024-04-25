@@ -1,0 +1,14 @@
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+p {
+    background-color: rgb(228, 228, 228);
+    border: 2px solid rgb(112, 112, 109);
+    padding: 15px;
+    display: inline-block;
+    width: 33.33%;
+    box-sizing: border-box;
+    margin-left: -5px;
+}

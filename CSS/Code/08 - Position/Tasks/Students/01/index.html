@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+        }
+
+        /* position: static|absolute|fixed|relative|sticky */
+
+        /* relative is against element`s original static position */
+
+        .box1 {
+            background-color: rgb(185, 93, 60);
+            position: relative;
+            width: 400px;
+            height: 400px;
+            z-index: 1;
+
+        }
+
+        .box2 {
+            background-color: lavender;
+            position: absolute;
+            border-top-right-radius: 90px;
+            border-bottom-left-radius: 90px;
+            z-index: 2;
+        }
+
+        .box2 {
+            background-color: red;
+            position: absolute;
+            border-top-right-radius: 90px;
+            border-bottom-left-radius: 90px;
+            z-index: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+</body>
+
+</html>
