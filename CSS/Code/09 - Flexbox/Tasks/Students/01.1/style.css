@@ -10,20 +10,35 @@ body {
 }
 
 .wrapper {
-    border: 1px solid black;
+    display: flex;
+    border: 1px dashed black;
+    min-height: 100vh;
     padding: 1em;
-    height: 950px;
+    justify-content: space-between;
+    
 }
 
 .wrapper div {
     background-color: rgb(234, 234, 238);
     border: 1px solid #666;
-    padding: 1em;
+    padding: 1em; 
+    /*ovdje padding određuje koliko će brojevi tj tekst  biti odmaknuti od rubova stupaca, jer wrapper div predstavlja iteme */
     text-align: center;
-    width: 350px;
-    margin: 1em;
+    flex-basis: 18vw; 
+    /* flex-basis određuje inicijalnu veličinu objekta prije nego se slobodan prostor distribuira prema flex faktorima. Kada se izostavi, računa se da je nula
+    U ovom primjeru je 20 vjv. jer je 100:5 = 20, pa da stane još i space between  */
 }
+
+/*
+Zakomentirala jer sam umjesto itema targetirala sve pomoću .wrapper div, umjesto na razini klase itema, pa se svodi na isto
+
+.flex-item {
+    flex-basis: 18vw;
+} */
+
+/*
+Zakomentirala sam ovo jer sam prebacila u wrapper pošto targetiraju isto
 
 .flex-container {
     display: flex;
-}
+} */
