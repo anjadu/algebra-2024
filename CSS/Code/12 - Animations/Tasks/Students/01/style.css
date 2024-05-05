@@ -14,7 +14,7 @@ h1 {
 
 .wrapper {
     text-align: center;
-}
+    }
 
 .wrapper div {
     background-color: aliceblue;
@@ -28,6 +28,17 @@ h1 {
     margin: 1em;
     text-align: center;
     position: relative;
+    
+}
+
+.wrapper div:nth-of-type(7) {
+    background-color: rgb(132, 7, 121);
+    color: white;
+    border: none;
+    position: relative;
+    transform: translate(-500px, 200px);
+   
+    
 }
 
 /* Animacija 1 */
@@ -61,6 +72,7 @@ h1 {
     0% {
         top: 0;
         transform: rotate(0deg) scale(1);
+        
     }
 
     50% {
@@ -81,3 +93,90 @@ h1 {
 /* za poslije: krug se mora smanjiti... */
 
 /* Animacija 3 */
+
+@keyframes animacija3 {
+    from {
+
+        transform: rotate(0deg);
+        border-radius: 100%;
+    }
+
+  
+
+    to {
+       
+        transform: rotate(360deg);
+        border-radius: 0%;
+    }
+
+}
+
+.wrapper>div:nth-of-type(3) {
+    animation: animacija3 5s linear 0s infinite;
+}
+
+/* animacija treba biti konstantna bez prijelaza, umjesto da ponovno počinje od početka?? */
+
+
+/* Animacija 4 */
+
+@keyframes animacija4 {
+    0%   { 
+        transform: translateY(0); 
+    }
+    50%  { 
+        transform: translateY(-15px); 
+    }
+    100% { 
+        transform: translateY(0); 
+    }
+}
+
+.wrapper>div:nth-of-type(4) {
+    animation: animacija4 0.5s linear 0s infinite;
+}
+
+
+
+/* Animacija 5 */
+
+@keyframes animacija5 {
+    0%   { 
+        transform: translateY(0);
+        background-color: aliceblue; 
+    }
+    50%  { 
+        transform: translateY(400px);
+        background-color: rgb(254, 240, 255);  
+    }
+
+
+    10%  { 
+        transform: translateY(400px);
+        transform: rotate(180deg);
+        background-color: aliceblue;  
+    }
+
+}
+
+.wrapper>div:nth-of-type(5) {
+    animation: animacija5 3s linear 0s infinite alternate-reverse;
+}
+
+/* Rotira se krivo */
+
+
+/* Animacija 6 */
+
+
+/* Animacija 7 */
+
+@keyframes border-pulsate {
+    0%   { border-color: transparent }
+   100% { border-color: white; }
+}
+
+.wrapper>div:nth-of-type(7) {
+    border: 4px solid cyan;
+    animation: border-pulsate 2s infinite reverse;
+}
