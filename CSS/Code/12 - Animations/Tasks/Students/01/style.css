@@ -14,6 +14,7 @@ h1 {
 
 .wrapper {
     text-align: center;
+    min-height: 100vh;
     }
 
 .wrapper div {
@@ -90,32 +91,31 @@ h1 {
     animation: animacija2 2s linear 0s infinite;
 }
 
-/* za poslije: krug se mora smanjiti... */
-
-/* Animacija 3 */
+/* Animacija 3  */
 
 @keyframes animacija3 {
-    from {
-
-        transform: rotate(0deg);
-        border-radius: 100%;
+    0% {
+        transform: rotate(0);
+        border-radius: 50%;
     }
 
   
-
-    to {
-       
-        transform: rotate(360deg);
+    50% {
+        transform: rotate(180deg);
         border-radius: 0%;
     }
 
+
+    100% {
+        transform: rotate(360deg);
+        border-radius: 50%;
+    }
 }
 
-.wrapper>div:nth-of-type(3) {
-    animation: animacija3 5s linear 0s infinite;
+.wrapper div:nth-child(3) {
+    animation: animacija3 5s ease-in-out infinite;
 }
 
-/* animacija treba biti konstantna bez prijelaza, umjesto da ponovno počinje od početka?? */
 
 
 /* Animacija 4 */
@@ -137,36 +137,63 @@ h1 {
 }
 
 
-
 /* Animacija 5 */
 
 @keyframes animacija5 {
-    0%   { 
-        transform: translateY(0);
-        background-color: aliceblue; 
-    }
-    50%  { 
-        transform: translateY(400px);
-        background-color: rgb(254, 240, 255);  
+    0% {
+        background-color: aliceblue;
+        transform: translateY(0) rotate(0);
     }
 
-
-    10%  { 
-        transform: translateY(400px);
-        transform: rotate(180deg);
-        background-color: aliceblue;  
+    25% {
+        background-color: aliceblue;
+        transform: translateY(390px) rotate(0);
+    }
+    50% {
+        background-color: rgb(237, 215, 235);
+        transform: translateY(400px) rotate(360deg);
     }
 
+    75% {
+        background-color: aliceblue;
+        transform: translateY(400px) rotate(0);
+    }
+
+    100% {
+        background-color: aliceblue;
+        transform: translateY(0) rotate(0) ;
+    }
+    
 }
 
-.wrapper>div:nth-of-type(5) {
-    animation: animacija5 3s linear 0s infinite alternate-reverse;
+.wrapper div:nth-child(5) {
+    animation: animacija5 5s linear 0s infinite ;
 }
 
-/* Rotira se krivo */
 
 
 /* Animacija 6 */
+
+@keyframes animacija6 {
+    
+    from {
+        top: 0;
+    }
+
+   to {
+    transform: translateY(400px)
+  }
+}
+
+/* Ovdje ne razumijem najbolji način da pošaljem krug da ide skroz do dna ekrana */
+
+div:nth-of-type(6) {
+    animation: animacija6 10s linear infinite;
+}
+
+div:nth-of-type(6):hover {
+    animation-play-state: paused;
+}
 
 
 /* Animacija 7 */

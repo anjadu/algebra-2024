@@ -1,0 +1,22 @@
+body {
+    font-family: "IBM Plex Mono";
+    box-sizing: border-box;
+}
+
+.title {
+   font-size: 10em;
+    color: rgb(117, 232, 247)
+}
+
+.month {
+    display: flex;
+}
+
+.week {
+
+}
+
+
+.day{
+    border: 1px solid black;
+}
