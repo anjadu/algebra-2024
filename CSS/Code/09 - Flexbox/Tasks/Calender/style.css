@@ -2,7 +2,7 @@ body {
     font-family: "IBM Plex Mono";
     box-sizing: border-box;
    background-image: url(notebook.jpg);
-   z:index:-1;
+   z-index:-1;
    
 }
 
@@ -14,37 +14,42 @@ img {
 .title {
     font-weight: 200;
     font-size: 10em;
-    color: #e6a822;;
+    color: #be6e12;;
     text-align: center;
     margin: 5px 5px;
     padding-left: 75px;
     }
 
 .month {
-    max-width: 700px;
-    margin: 20px auto;
+    width: 800px;
+    height: 750px;
+    margin: 100px auto 100px auto;
+    border: none;
+    background-color: white;  
     opacity: 0.9 
     
 }
 .week {
     display: flex;  
-    margin: 5px 5px;  
+    margin: 5px 10px 5px 20px;
+    padding-left: 40px;
+    
    
 }
 
 .week:nth-of-type(1) {
-    padding-left:100px;
+    padding-left: 140px;
 }
 
 .day{
     
-    border: 1px solid #d49bbe;
-    background-color: #f8e1ed;
+    border: 1px solid #d49bb1;
+    background-color: #f8e6e1;
     min-width: 80px;
     min-height: 80px;
     margin-right: 5px;
     padding: 5px;
-    color:#940b60
+    color:#940b34
 
   }
 
@@ -58,7 +63,7 @@ img {
     border-radius: 50%;
     width: 15px;
     height: 15px;
-    background-color: 940b60;
+    background-color: #940b34;
     color: white;
     position: absolute;
     right: 15px;

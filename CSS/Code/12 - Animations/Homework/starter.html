@@ -59,6 +59,65 @@
 
         .clickedSquareActive {
             animation: clicked 1s infinite;
+
+        }
+
+        /* Animacija 1 */
+
+        @keyframes animacija1 {
+
+            0% {
+                background-color: beige;
+            }
+
+            25% {
+                background-color: yellow;
+            }
+
+            45% {
+                background-color: blue;
+            }
+
+            75% {
+                background-color: green;
+            }
+
+            100% {
+                background-color: red;
+            }
+        }
+
+        #circle {
+            animation: animacija1 8s linear infinite;
+
+        }
+
+        /* Animacija 2 */
+
+
+        @keyframes animacija2 {
+
+            0% {
+
+                transform: translate(40px, -20px);
+            }
+
+            25% {
+                transform: translate(80px, 0px);
+            }
+
+            65% {
+                transform: translate(40px, -20px);
+            }
+
+            100% {
+                top: 0;
+            }
+        }
+
+        #square {
+            animation: animacija2 2s ease-in-out infinite;
+
         }
     </style>
 </head>
