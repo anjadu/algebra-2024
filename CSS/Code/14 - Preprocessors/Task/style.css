@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  max-width: 100vw;
+}
+body p {
+  font-size: 12px;
+}
+body h1 {
+  font-size: 25px;
+}
+body h2 {
+  font-size: 16px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+nav a {
+  display: inline-block;
+  padding: 10px 120px;
+  text-decoration: none;
+  color: rgb(199, 199, 199);
+  background-color: rgb(164, 19, 48);
+}
+nav a:hover {
+  background-color: rgb(199, 199, 199);
+  color: rgb(164, 19, 48);
+}
+
+header {
+  background-color: #333;
+  padding: 20px;
+}
+header div {
+  text-align: center;
+  color: rgb(199, 199, 199);
+}
+header div a {
+  display: inline-block;
+  padding: 10px 120px;
+  text-decoration: none;
+  color: rgb(199, 199, 199);
+  background-color: rgb(164, 19, 48);
+  margin: 10px 1px;
+}
+header div a:hover {
+  background-color: rgb(199, 199, 199);
+  color: rgb(164, 19, 48);
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+main h1 {
+  text-align: center;
+  padding: 0 28%;
+  margin: 20px 0px;
+}
+main section {
+  flex: 0 0 calc(33.33% - 100px);
+  align-self: center;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  max-width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 50px;
+}
+footer h1 {
+  color: rgb(199, 199, 199);
+  text-align: center;
+  padding: 0 300px;
+  translate: 200px 0px;
+  text-align: center;
+  translate: 0 0px;
+  margin-top: 20px;
+}
+footer section {
+  flex: 0 0 calc(50% - 50px);
+  color: rgb(199, 199, 199);
+  padding: 20px 20px;
+  margin: 30px 0;
+}/*# sourceMappingURL=style.css.map */
