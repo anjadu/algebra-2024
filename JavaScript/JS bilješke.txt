@@ -1,0 +1,60 @@
+w3Schools - Reserved - popis riječi kojima ne smijemo nazivati varijable
+
+Instalirati ekstenzziju Code runner!
+
+Komentari u JS 
+
+// komentar u jednoim redu
+
+/* Komentar u više redova  
+*Ekstra zvjezdica za svaki red
+*/ 
+
+JSDoc - standard komentiranja koji služi za kreiranje dokumentacije
+
+Programiz JS compiler
+
+Varijabla može imati samo jednu vrijednost!!! - ako opet kasnije u kodu navedeno istu s drugom vrijednosti, druga će pregaziti prvu
+
+Tippvi podataka u JS:
+
+- Primitivni - ne mogu se mijenjati kasnije u kodu vrijednosti: brojevi, tekst(String), Boolean vrijednost, undefined
+- Objektni - objekti, nizovi, funkcije, null: možemo im mijenjati vrijednosti
+
+BROJEVI
+integer - cjelobrojna vrijednost (bez decimalnih)
+float - broj s decimalnim vrijednostima : svi br su u JS floating point tip broja
+bigint - dodano da bi se spremili veliki brojevi (nećemo to raditi)
+
+TEKST
+- u JS se sprema u string tipu podatka (svejedno je jesu jednostruki ili dvostruki, možemo ih koristiti kombinirano '')
+- prepoznajemo ga po navodnicima: npr 
+var x= "Lorem ipsum dolor sit amet"
+
+BOOLEAN
+true ili false
+- truthy i falsey (npr. kod number data typea sve osim 0 je true, prazan string je falsey, NaN; = not a number (false), objekti su true, 
+
+NULL i UNDEFINED
+
+- null je ključna riječ koja se ibično koristi da naznači odsutnost neke vrijednosti
+- undefined je vrijednost varijabli koje nisu inicijalizirane
+
+typeof operator - vartit će nam vrijednost određenog datatypea
+
+JS automatske konverzije naučiti napamet 
+()
+
+btw. U JS je -- daju plus
+
+STRING
+- niz znakova (0 ili više) okružen navodnicima
+- navodnici mogu biti jednostruki ili dvostruki
+- brojanje pozicije znaka u stringu počinje od nule!
+
+Konkatenacija stringa:
+- spajanje dva ili više stringova, u JS se koristi operator +
+- trim miče praznine na početku i kraju stringa
+
+
+
