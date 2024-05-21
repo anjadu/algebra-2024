@@ -57,4 +57,64 @@ Konkatenacija stringa:
 - trim miče praznine na početku i kraju stringa
 
 
+TIPOVI OPERATORA
+
+Logički 
+
+&&  -> AND
+||  -> OR
+!   -> NOT 
+
+Aritmetički
++ - * / % ** ++ --
+
+Operatori dodijeljivanja
+= += -= *= /= %= **=
+
+Relacijski 
+== loose equality operator
+=== operator checks whether its two operands are equal
+
+...
+
+Bitovni (bitwise)
+
+Operator konkatenacije
+ ...
+
+
+Tipovi operatora
+- unarni: var x +=1;
+- binarni: var x= y+1;
+- ternarni (bitan za React jer tamo ne možemo koristiti IF ELSE)
+	var x= y ? y : x + 1; (formula je uvjet i dva kejsa)
+
+	koristi se ovako: 
+		var student = true
+		var type = student == true ? "ovo je student" : "ne, nije student";
+inkrement
+x++ ili ++x - ponaša se različito ovisno o kontekstu 
+
+dekrement
+x++ ili x--
+
+UVJETI 
+Jednostavni IF - else
+If- else if- else (može biti samo jedan else if)
+
+Switch
+- alternaiva kompliciranim if izjavama (umjesto ponavljanje else if, kad god nam treba više od 3 provjere)
+case 1 BLOK KODA break;
+case 2 BLOK KODA break;
+case 3 BLOK KODA break;
+
+Smjer provjere ide od gore prema dolje.
+Switch ćemo koristiti npr. za kviz da evaluiramo koliko je korisnik imao bodova i u kojem je percentageu
+
+PETLJA
+while, do ... while
+
+za while je moiguće da se nikad neće izvršiti (jer prvo evaluira, onda radi)
+do... while će se izvršiti bar jednom (jer prvo radi onda evaluira)
+
 
