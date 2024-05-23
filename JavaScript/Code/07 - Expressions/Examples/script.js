@@ -89,3 +89,41 @@ switch (date) {
         break;
 
 }
+
+
+// CTRL + CK je za zakomentirati
+// CTRL + CU je za otkomentirati
+
+// For loop
+
+for (var i = 1; i < 10; i++) {
+    console.log('Current counter is' + i);
+}
+
+
+for (var i = 1; i < 3; i++) {
+    console.log('Current counter is ' + i)
+
+    for (var j = 1; j < 5; j++) {
+        console.log('Current counter is ' + j)
+    }
+}
+
+console.log('Ovo je output za do-while petlju');
+
+// Do While
+var count = 0;
+do {
+    // do = napravi ovo (kod ispod)
+    console.log(count);
+    count++; // obavezno povećaj counter za 1 (inače će ući u infinity loop i brejkati VS code?)
+} while (count < 10); // dokle god je counter manji od 10
+
+var varOne = 0;
+for (i = 0; i < 4; i++) {
+    for (j = 0; j < 4; j++) {
+        varOne++;
+    }
+}
+console.log(varOne);
+```

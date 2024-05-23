@@ -10,6 +10,10 @@ Komentari u JS
 *Ekstra zvjezdica za svaki red
 */ 
 
+CTRL + CK je za zakomentirati
+CTRL + CU je za otkomentirati
+
+
 JSDoc - standard komentiranja koji služi za kreiranje dokumentacije
 
 Programiz JS compiler
@@ -116,5 +120,26 @@ while, do ... while
 
 za while je moiguće da se nikad neće izvršiti (jer prvo evaluira, onda radi)
 do... while će se izvršiti bar jednom (jer prvo radi onda evaluira)
+
+ARRAY (NIZ)
+- radi se o sortirnoj zbirci, array je tipa objekt, prepoznajemo ga po uglatim zagradama, podatke u arrayu odvajamo zarezom
+- mi ćemo raditi literale ()
+- elementi iz arraya dohvaćaju se brojkom, počevši od nule, ali ugl ih nema smisla hardkodati, izvlačit ćemo ih kroz petlju
+array matrix - kad ima array unutar arraya, prva vrijednost označava koji aeeay, a drugi koje mjesto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
