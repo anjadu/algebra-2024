@@ -30,6 +30,5 @@ let car = {
 
 console.log(car.checkIfSold());
 console.log(car.checkIfSuitableForFamily());
-
-
+console.log(car.age());
 
