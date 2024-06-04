@@ -34,5 +34,5 @@ console.log(calculate(5, 3, '-')); // Output: 2
 console.log(calculate(5, 3, '&')); // Output: "Invalid operator"
 
 
-}
+
 
