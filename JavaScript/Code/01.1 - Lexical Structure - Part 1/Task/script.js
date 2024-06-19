@@ -16,3 +16,5 @@ if (a) {
 }
 
 fullPrice = (price * 100) / discount;
+
+// Minifikacija - minimiziranje konačne veličine JS koda koji browser mora izvršavati npr. brisanje formatiranja) minifikacija se izvršava automatski (pomoću webpack alata: webpack.js.org)

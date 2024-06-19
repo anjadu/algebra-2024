@@ -4,5 +4,5 @@ var x = "Lorem ipsum",
     q = false,
     w;
 
-x += "3" + 1;
+x += "3" + 1; // x = x + 3 (tako je u svim programskim jezicima)...
 var baaa = "b" + "a" + +"a" + "a";

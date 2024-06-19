@@ -7,14 +7,14 @@ console.log(user);
 console.log("I have 27 " + "years");
 console.log("I have" + " " + "'3' dogs");
 
-console.log("I live in Zagreb, the capital of \nRepublic of Croatia.");
+console.log("I live in Zagreb, the capital of \nRepublic of Croatia."); // nova linija
 
 // Length
 var str = "Life, the universe and everything.";
-console.log(str.length);
+console.log(str.length); // lenght je atribut/propety (brojanje znakova u stringu kreće od 1), ne od 0! (34)
 
-// CharAT - counting starts from 0, spaces are not ignored
-var sentence= "The quick brown fox jumps over the lazy dog."
+// CharAT - counting starts from 0, spaces are not ignored, METODA
+var sentence = "The quick brown fox jumps over the lazy dog."
 console.log(sentence.charAt(6));
 
 // Trim 
@@ -23,8 +23,8 @@ console.log(greeting.trim());
 
 
 // IndexOf
-var paragraph = 
-"The quick brown fox jumps over the lazy dog. If the dog barked, was it really lazy?";
+var paragraph =
+    "The quick brown fox jumps over the lazy dog. If the dog barked, was it really lazy?";
 
 var searchTerm = "dog";
 var indexOfFirst = paragraph.indexOf(searchTerm); // 40

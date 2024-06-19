@@ -21,7 +21,7 @@ console.log("5" - 2);
 // '10' stays "String", Number is added to string and becomes a string
 console.log("10" + 5);
 
-console.log(10 + -+-10);
+console.log(10 + -+-10); //
 
 var foo = 42; // foo is now a number
 foo = "bar"; // foo is now a string

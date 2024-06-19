@@ -6,7 +6,7 @@ if (age > 18) {
     console.log('User is NOT of legal drinking age. DO NOT SERVE HIM!');
 }
 
-// If, Else if, Else
+// If, Else if, Else // else if može koliko hoćemo s tim da else (zadnji) služi za obuhvatiti sve ostalo što nismo već naveli pod if ili else if, ali se tada bolje koristi switch
 var gender = 'Male';
 if (gender == 'Male') {
     console.log('User is a male');
@@ -32,7 +32,7 @@ if (customerAge >= 4 && customerAge <= 99) {
 }
 
 
-// Switch
+// Switch // služi umjesto if else
 var fruit = 'Mangoes';
 
 switch (fruit) {
