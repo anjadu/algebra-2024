@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>User Directory</title>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <!-- Stylesheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="../Task/script.js"></script>
+  </head>
+
+ 
+  <body>
+    <script id="template" type="text/x-handlebars-template"></script>
+    <table>
+      <tr>
+        <th>index</th>
+        <th>Ime</th>
+        <th>Datum rođenja</th>
+        <th>Grad</th>
+        <th>Država</th>
+       <th>email</th>
+     </tr>
+     {{#each user}}
+      <tr>
+        <td>{{@index}}</td>
+        <td>{{name}}</td>
+        <td>{{birthday}}</td>
+        <td>{{address.city}}</td>
+        <td>{{address.country}}</td>
+        <td>{{email}}</td>
+      </tr>
+    {{/each}}
+</table>
+</script>
+
+<div id="users"></div>
+
+  </body>
+</html>
