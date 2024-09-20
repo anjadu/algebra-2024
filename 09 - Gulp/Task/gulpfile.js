@@ -29,7 +29,6 @@ gulp.task('uglify', () =>{
     return gulp.src('js/**/*.js')
     .pipe(uglify())
     .pipe(gulp.dest('dist/js'));
-
 });
 
 
