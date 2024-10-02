@@ -1,29 +1,28 @@
-import Hero from './Hero';
+import Hero from "./Hero";
 
 export default function FunctionalComponent() {
-  // Regular JavaScript Object
   const student = {
-    firstName: 'John',
-    lastName: 'Doe',
+    firstName: "John",
+    lastName: "Doe",
     uid: 12345,
     active: true,
   };
 
-  // Output HTML - JSX
+  // JSX Syntax Goes In
   return (
     <div>
-      <h1>Student Information</h1>
+      <h2>Student Information</h2>
       <Hero />
       <p>First name: {student.firstName}</p>
       <p>Last name: {student.lastName}</p>
       <p>Student ID number: {student.uid}</p>
-      <hr />
 
       <p>
-        {student.active ? (
-          <strong>Student active</strong>
+        Student status:{" "}
+        {student.active === true ? (
+          <span>student is active</span>
         ) : (
-          <strong>Student inactive</strong>
+          <span>student is inactive</span>
         )}
       </p>
     </div>

@@ -1,12 +1,12 @@
 import './App.css';
-import { FunctionalComponent, ClassComponent, Footer } from './Components';
+import { ClassComponent, FunctionalComponent, Footer } from './Components';
 
 export default function App() {
   return (
-    <>
+    <div>
       <ClassComponent />
       <FunctionalComponent />
       <Footer />
-    </>
+    </div>
   );
 }
